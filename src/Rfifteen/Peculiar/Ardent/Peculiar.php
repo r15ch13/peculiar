@@ -17,7 +17,7 @@ abstract class Peculiar extends LaravelBookArdent {
      *
      * @return void
      */
-    protected static function boot()
+    public static function boot()
     {
         parent::boot();
 
