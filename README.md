@@ -29,5 +29,13 @@ use Rfifteen\Peculiar\Peculiar;
 class User extends Peculiar {}
 ```
 
+If you're using [LaravelBook\Ardent](https://github.com/laravelbook/ardent) use it like so:
+
+```php
+use Rfifteen\Peculiar\Ardent\Peculiar;
+
+class User extends Peculiar {}
+```
+
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/r15ch13/peculiar/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
