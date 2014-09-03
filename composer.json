@@ -17,9 +17,8 @@
         "source": "https://github.com/r15ch13/peculiar"
     },
     "require": {
-        "php": ">=5.3.0",
-        "illuminate/support": "4.2.*",
-        "rhumsaa/uuid": "2.7.*"
+        "illuminate/database": "~4.2",
+        "rhumsaa/uuid": "~2.7"
     },
     "autoload": {
         "psr-0": {
