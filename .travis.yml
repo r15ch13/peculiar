@@ -7,7 +7,7 @@ php:
   - hhvm
 
 install:
-  - travis_retry composer install --prefer-source --no-interaction
+  - travis_retry composer install --no-interaction
 
 script:
   - bin/phpspec run -v --no-interaction
