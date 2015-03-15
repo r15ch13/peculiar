@@ -1,0 +1,6 @@
+---
+suites:
+  default:
+    namespace: Rfifteen\Peculiar
+    psr4_prefix: Rfifteen\Peculiar
+formatter.name: pretty

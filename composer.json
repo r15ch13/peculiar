@@ -29,8 +29,8 @@
         "bin-dir": "bin"
     },
     "autoload": {
-        "psr-0": {
-            "Rfifteen\\Peculiar": "src/"
+        "psr-4": {
+            "Rfifteen\\Peculiar\\": "src/"
         }
     },
     "suggest": {
