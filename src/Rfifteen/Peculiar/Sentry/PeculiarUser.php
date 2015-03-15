@@ -13,18 +13,15 @@ class PeculiarUser extends SentryUser {
     public $incrementing = false;
 
     /**
-     * The "booting" method of the model.
+     * Create a new Eloquent model instance.
      *
+     * @param  array  $attributes
      * @return void
      */
-    protected static function boot()
+    public function __construct(array $attributes = array())
     {
-        parent::boot();
-
-        static::creating(function($model)
-        {
-            $model->{$model->getKeyName()} = (string)$model->generateNewId();
-        });
+        $this->{$this->getKeyName()} = (string)$this->generateNewId();
+        parent::__construct($attributes);
     }
 
     /**
