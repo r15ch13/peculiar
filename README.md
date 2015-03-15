@@ -9,7 +9,7 @@ Add `r15ch13/peculiar` as a requirement to `composer.json`:
 ```javascript
 {
     "require": {
-        "r15ch13/peculiar": "dev-master"
+        "r15ch13/peculiar": "~1.0"
     }
 }
 ```
@@ -37,5 +37,11 @@ use Rfifteen\Peculiar\Ardent\Peculiar;
 class User extends Peculiar {}
 ```
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/r15ch13/peculiar/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+If you're using [Cartalyst\Sentry](https://github.com/cartalyst/sentry) use it like so:
+
+```php
+use Rfifteen\Peculiar\Sentry\PeculiarUser;
+
+class User extends PeculiarUser {}
+```
 
