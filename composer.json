@@ -2,7 +2,7 @@
     "name": "r15ch13/peculiar",
     "description": "An extension to the Laravel model. It allows the use of UUIDs as primary keys.",
     "type": "library",
-    "keywords": ["laravel", "model", "uuid", "guid", "ardent", "sentry"],
+    "keywords": ["laravel", "model", "uuid", "guid", "ardent", "sentry", "eloquent"],
     "homepage": "https://github.com/r15ch13/peculiar",
     "license": "MIT",
     "authors": [
