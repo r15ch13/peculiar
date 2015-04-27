@@ -5,7 +5,7 @@ interface UuidModelInterface
     /**
      * Get a new version 4 (random) UUID.
      *
-     * @return \Rhumsaa\Uuid\Uuid
+     * @return \Ramsey\Uuid\Uuid
      */
     public function generateNewId();
 }
