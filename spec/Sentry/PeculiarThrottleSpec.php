@@ -8,10 +8,17 @@ use Rhumsaa\Uuid\Uuid;
 
 class PeculiarThrottleSpec extends ObjectBehavior
 {
+    function let()
+    {
+        $this->beAnInstanceOf('spec\Rfifteen\Peculiar\Sentry\DummyPeculiarThrottle');
+    }
+
     function it_is_initializable()
     {
-        $this->shouldHaveType('Rfifteen\Peculiar\Sentry\PeculiarThrottle');
+        $this->shouldImplement('Rfifteen\Peculiar\UuidModelInterface');
+        $this->shouldImplement('Rfifteen\Peculiar\Sentry\PeculiarThrottle');
         $this->shouldImplement('Cartalyst\Sentry\Throttling\Eloquent\Throttle');
+        $this->shouldImplement('Illuminate\Database\Eloquent\Model');
     }
 
     function it_should_have_incrementing_turned_off()
@@ -28,4 +35,8 @@ class PeculiarThrottleSpec extends ObjectBehavior
     {
         $this->getKey()->shouldMatch('/' . Uuid::VALID_PATTERN . '/');
     }
+}
+
+class DummyPeculiarThrottle extends \Rfifteen\Peculiar\Sentry\PeculiarThrottle
+{
 }

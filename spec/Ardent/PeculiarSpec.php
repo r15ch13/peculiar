@@ -15,6 +15,7 @@ class PeculiarSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
+        $this->shouldImplement('Rfifteen\Peculiar\UuidModelInterface');
         $this->shouldImplement('Rfifteen\Peculiar\Ardent\Peculiar');
         $this->shouldImplement('LaravelBook\Ardent\Ardent');
         $this->shouldImplement('Illuminate\Database\Eloquent\Model');

@@ -1,9 +1,10 @@
 <?php namespace Rfifteen\Peculiar\Sentry;
 
+use Rfifteen\Peculiar\UuidModelInterface;
 use Cartalyst\Sentry\Groups\Eloquent\Group as SentryGroup;
 use Rhumsaa\Uuid\Uuid;
 
-class PeculiarGroup extends SentryGroup {
+class PeculiarGroup extends SentryGroup implements UuidModelInterface  {
 
     /**
      * Indicates if the IDs are auto-incrementing.

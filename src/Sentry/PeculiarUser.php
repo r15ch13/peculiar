@@ -1,9 +1,10 @@
 <?php namespace Rfifteen\Peculiar\Sentry;
 
+use Rfifteen\Peculiar\UuidModelInterface;
 use Cartalyst\Sentry\Users\Eloquent\User as SentryUser;
 use Rhumsaa\Uuid\Uuid;
 
-class PeculiarUser extends SentryUser {
+class PeculiarUser extends SentryUser implements UuidModelInterface {
 
     /**
      * Indicates if the IDs are auto-incrementing.

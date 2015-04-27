@@ -8,10 +8,17 @@ use Rhumsaa\Uuid\Uuid;
 
 class PeculiarUserSpec extends ObjectBehavior
 {
+    function let()
+    {
+        $this->beAnInstanceOf('spec\Rfifteen\Peculiar\Sentry\DummyPeculiarUser');
+    }
+
     function it_is_initializable()
     {
-        $this->shouldHaveType('Rfifteen\Peculiar\Sentry\PeculiarUser');
+        $this->shouldImplement('Rfifteen\Peculiar\UuidModelInterface');
+        $this->shouldImplement('Rfifteen\Peculiar\Sentry\PeculiarUser');
         $this->shouldImplement('Cartalyst\Sentry\Users\Eloquent\User');
+        $this->shouldImplement('Illuminate\Database\Eloquent\Model');
     }
 
     function it_should_have_incrementing_turned_off()
@@ -28,4 +35,8 @@ class PeculiarUserSpec extends ObjectBehavior
     {
         $this->getKey()->shouldMatch('/' . Uuid::VALID_PATTERN . '/');
     }
+}
+
+class DummyPeculiarUser extends \Rfifteen\Peculiar\Sentry\PeculiarUser
+{
 }

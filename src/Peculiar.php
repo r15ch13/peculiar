@@ -1,9 +1,10 @@
 <?php namespace Rfifteen\Peculiar;
 
+use Rfifteen\Peculiar\UuidModelInterface;
 use Illuminate\Database\Eloquent\Model;
 use Rhumsaa\Uuid\Uuid;
 
-abstract class Peculiar extends Model {
+abstract class Peculiar extends Model implements UuidModelInterface {
 
     /**
      * Indicates if the IDs are auto-incrementing.

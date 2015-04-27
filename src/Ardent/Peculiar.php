@@ -1,9 +1,10 @@
 <?php namespace Rfifteen\Peculiar\Ardent;
 
+use Rfifteen\Peculiar\UuidModelInterface;
 use LaravelBook\Ardent\Ardent as LaravelBookArdent;
 use Rhumsaa\Uuid\Uuid;
 
-abstract class Peculiar extends LaravelBookArdent {
+abstract class Peculiar extends LaravelBookArdent implements UuidModelInterface  {
 
     /**
      * Indicates if the IDs are auto-incrementing.

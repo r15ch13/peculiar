@@ -8,10 +8,17 @@ use Rhumsaa\Uuid\Uuid;
 
 class PeculiarGroupSpec extends ObjectBehavior
 {
+    function let()
+    {
+        $this->beAnInstanceOf('spec\Rfifteen\Peculiar\Sentry\DummyPeculiarGroup');
+    }
+
     function it_is_initializable()
     {
-        $this->shouldHaveType('Rfifteen\Peculiar\Sentry\PeculiarGroup');
+        $this->shouldImplement('Rfifteen\Peculiar\UuidModelInterface');
+        $this->shouldImplement('Rfifteen\Peculiar\Sentry\PeculiarGroup');
         $this->shouldImplement('Cartalyst\Sentry\Groups\Eloquent\Group');
+        $this->shouldImplement('Illuminate\Database\Eloquent\Model');
     }
 
     function it_should_have_incrementing_turned_off()
@@ -28,4 +35,8 @@ class PeculiarGroupSpec extends ObjectBehavior
     {
         $this->getKey()->shouldMatch('/' . Uuid::VALID_PATTERN . '/');
     }
+}
+
+class DummyPeculiarGroup extends \Rfifteen\Peculiar\Sentry\PeculiarGroup
+{
 }

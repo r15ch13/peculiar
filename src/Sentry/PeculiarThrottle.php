@@ -1,9 +1,10 @@
 <?php namespace Rfifteen\Peculiar\Sentry;
 
+use Rfifteen\Peculiar\UuidModelInterface;
 use Cartalyst\Sentry\Throttling\Eloquent\Throttle as SentryThrottle;
 use Rhumsaa\Uuid\Uuid;
 
-class PeculiarThrottle extends SentryThrottle {
+class PeculiarThrottle extends SentryThrottle implements UuidModelInterface  {
 
     /**
      * Indicates if the IDs are auto-incrementing.
