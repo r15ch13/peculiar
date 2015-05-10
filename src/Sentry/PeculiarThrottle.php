@@ -2,7 +2,7 @@
 
 use Rfifteen\Peculiar\UuidModelInterface;
 use Cartalyst\Sentry\Throttling\Eloquent\Throttle as SentryThrottle;
-use Ramsey\Uuid\Uuid;
+use Rhumsaa\Uuid\Uuid;
 
 class PeculiarThrottle extends SentryThrottle implements UuidModelInterface  {
 
@@ -28,7 +28,7 @@ class PeculiarThrottle extends SentryThrottle implements UuidModelInterface  {
     /**
      * Get a new version 4 (random) UUID.
      *
-     * @return \Ramsey\Uuid\Uuid
+     * @return \Rhumsaa\Uuid\Uuid
      */
     public function generateNewId()
     {

@@ -2,7 +2,7 @@
 
 use Rfifteen\Peculiar\UuidModelInterface;
 use Cartalyst\Sentry\Groups\Eloquent\Group as SentryGroup;
-use Ramsey\Uuid\Uuid;
+use Rhumsaa\Uuid\Uuid;
 
 class PeculiarGroup extends SentryGroup implements UuidModelInterface  {
 
@@ -28,7 +28,7 @@ class PeculiarGroup extends SentryGroup implements UuidModelInterface  {
     /**
      * Get a new version 4 (random) UUID.
      *
-     * @return \Ramsey\Uuid\Uuid
+     * @return \Rhumsaa\Uuid\Uuid
      */
     public function generateNewId()
     {

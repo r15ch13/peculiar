@@ -4,7 +4,7 @@ namespace spec\Rfifteen\Peculiar\Ardent;
 
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
-use Ramsey\Uuid\Uuid;
+use Rhumsaa\Uuid\Uuid;
 
 class PeculiarSpec extends ObjectBehavior
 {
@@ -26,9 +26,9 @@ class PeculiarSpec extends ObjectBehavior
         $this->getIncrementing()->shouldReturn(false);
     }
 
-    function it_should_generate_a_ramsey_uuid()
+    function it_should_generate_a_rhumsaa_uuid()
     {
-        $this->generateNewId()->shouldReturnAnInstanceOf('Ramsey\Uuid\Uuid');
+        $this->generateNewId()->shouldReturnAnInstanceOf('Rhumsaa\Uuid\Uuid');
     }
 
     function its_primary_key_value_should_be_a_valid_uuid()
