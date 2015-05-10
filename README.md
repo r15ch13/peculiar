@@ -9,7 +9,7 @@ Add `r15ch13/peculiar` as a requirement to `composer.json`:
 ```javascript
 {
     "require": {
-        "r15ch13/peculiar": "~2.0"
+        "r15ch13/peculiar": "~1.0"
     }
 }
 ```
