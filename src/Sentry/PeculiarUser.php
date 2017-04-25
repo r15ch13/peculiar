@@ -2,7 +2,7 @@
 
 use Rfifteen\Peculiar\UuidModelInterface;
 use Cartalyst\Sentry\Users\Eloquent\User as SentryUser;
-use Rhumsaa\Uuid\Uuid;
+use Ramsey\Uuid\Uuid;
 
 class PeculiarUser extends SentryUser implements UuidModelInterface {
 
@@ -28,7 +28,7 @@ class PeculiarUser extends SentryUser implements UuidModelInterface {
     /**
      * Get a new version 4 (random) UUID.
      *
-     * @return \Rhumsaa\Uuid\Uuid
+     * @return \Ramsey\Uuid\Uuid
      */
     public function generateNewId()
     {

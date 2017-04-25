@@ -18,7 +18,7 @@
     },
     "require": {
         "illuminate/database": "~4.0|~5.0",
-        "ramsey/uuid": "~2.8"
+        "ramsey/uuid": "~3.6"
     },
     "require-dev": {
         "cartalyst/sentry": "~2.1",

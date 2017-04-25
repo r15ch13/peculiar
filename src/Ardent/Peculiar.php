@@ -2,7 +2,7 @@
 
 use Rfifteen\Peculiar\UuidModelInterface;
 use LaravelBook\Ardent\Ardent as LaravelBookArdent;
-use Rhumsaa\Uuid\Uuid;
+use Ramsey\Uuid\Uuid;
 
 abstract class Peculiar extends LaravelBookArdent implements UuidModelInterface  {
 
@@ -28,7 +28,7 @@ abstract class Peculiar extends LaravelBookArdent implements UuidModelInterface 
     /**
      * Get a new version 4 (random) UUID.
      *
-     * @return \Rhumsaa\Uuid\Uuid
+     * @return \Ramsey\Uuid\Uuid
      */
     public function generateNewId()
     {
